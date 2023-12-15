@@ -25,11 +25,7 @@ namespace DependencyInjection.Controllers
 
         [Route("v1/orders")]
         [HttpPost]
-        public async Task<string> Place(
-            int customerId,
-            string zipCode,
-            string promoCode,
-            int[] products)
+        public async Task<string> Place(int customerId,string zipCode,string promoCode,int[] products)
         {
             var customer = await _customerRepository.GetCustomerAsync(customerId);
             var deliveryFee = await _deliveryFeeService.GetDeliveryFeeAsync(zipCode);
