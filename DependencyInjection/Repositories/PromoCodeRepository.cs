@@ -1,5 +1,7 @@
-﻿using DependencyInjection.Models;
+﻿using Dapper;
+using DependencyInjection.Models;
 using DependencyInjection.Repositories.Interfaces;
+using Microsoft.Data.SqlClient;
 
 namespace DependencyInjection.Repositories
 {
