@@ -25,6 +25,7 @@ namespace DependencyInjection.Extensions
         public static void AddServices(this IServiceCollection services)
         {
             services.AddTransient<IDeliveryFeeServices, DeliveryFeeService>();
+            services.AddTransient<IAdviceSlipServices, AdviceSlipServices>();
         }
     }
 }

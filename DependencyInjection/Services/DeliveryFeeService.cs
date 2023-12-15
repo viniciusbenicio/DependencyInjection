@@ -1,5 +1,8 @@
-﻿using DependencyInjection.Services.Interfaces;
+﻿using DependencyInjection.Models;
+using DependencyInjection.Services.Interfaces;
+using Newtonsoft.Json;
 using RestSharp;
+using System.Text.Json;
 
 namespace DependencyInjection.Services
 {

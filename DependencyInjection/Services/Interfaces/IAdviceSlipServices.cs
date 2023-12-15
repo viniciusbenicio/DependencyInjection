@@ -2,8 +2,8 @@
 
 namespace DependencyInjection.Services.Interfaces
 {
-    public interface IDeliveryFeeServices
+    public interface IAdviceSlipServices
     {
-        Task<decimal> GetDeliveryFeeAsync(string zipCode);
+        Task<SlipObject> GetAdviceAsync(int slip_id);
     }
 }
